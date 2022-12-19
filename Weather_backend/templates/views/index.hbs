@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dbc433ec8d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  {{>navbar}}        {{!-- from navbar.hbs --}}
+
+
+  <div class="card">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button id="search" action="" class=" fa-solid fa-magnifying-glass fa-2x"></button>
+    </div>
+    <div class="weather">
+      <h2 class="city">Weather in Lahore</h2>
+      <h2 class="temp">11° C</h2>
+      <div class="flex">
+        <img class="icon" src="https://openweathermap.org/img/wn/04n.png" alt="">
+        <div class="description">smoke</div>
+      </div>
+
+      <div class="humidity">Humidity: 77%</div>
+      <div class="wind">Wind Speed: 0 km/hr</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
